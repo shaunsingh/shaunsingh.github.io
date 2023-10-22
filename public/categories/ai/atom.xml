@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Portfolio - ai</title>
+    <subtitle>Personal portfolio of prior engineering projects, see github.com&#x2F;shaunsingh for more.</subtitle>
+    <link href="https://shaunsingh.github.io/categories/ai/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://shaunsingh.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-10-21T00:00:00+00:00</updated>
+    <id>https://shaunsingh.github.io/categories/ai/atom.xml</id>
+    <entry xml:lang="en">
+        <title>QML-PM</title>
+        <published>2023-10-21T00:00:00+00:00</published>
+        <updated>2023-10-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://shaunsingh.github.io/projects/qml-pm/" type="text/html"/>
+        <id>https://shaunsingh.github.io/projects/qml-pm/</id>
+        
+        <summary type="html">&lt;p&gt;Accelerating Precision Medicine with Hybrid Quantum Computing and Adversarial Neural Networks&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>
