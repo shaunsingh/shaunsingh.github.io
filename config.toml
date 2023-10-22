@@ -1,0 +1,89 @@
+# test
+base_url = "https://shaunsingh.github.io"
+theme = "papaya"
+default_language = "en"
+compile_sass = true
+build_search_index = false
+generate_feed = true
+feed_filename = "atom.xml"
+
+[markdown]
+# When set to "true", all code blocks are highlighted.
+highlight_code = true
+
+# The theme to use for code highlighting.
+# See Zola configuration docs for list of allowed values.
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "material-dark", filename = "syntax-theme-dark.css" },
+  { theme = "material-light", filename = "syntax-theme-light.css" },
+]
+
+[languages]
+
+[languages.en]
+title = "Portfolio"
+description = "Personal portfolio of prior engineering projects, see github.com/shaunsingh for more."
+generate_feed = true
+feed_filename = "atom.xml"
+
+# The taxonomies to be rendered for the site and their configuration of the default languages
+taxonomies = [
+    { name = "tags", feed = true, lang = "en" },
+    { name = "categories", feed = true, lang = "en" },
+]
+
+[languages.en.translations]
+projects = "Projects"
+blog = "Blog"
+about = "About"
+recent_projects = "Recent Projects"
+more_projects = "More Projects"
+recent_blog_posts = "Recent Blog Posts"
+more_blog_posts = "More blog posts"
+tag = "Tag"
+tags = "Tags"
+to_all_tags = "To all tags"
+category = "Category"
+categories = "Categories"
+to_all_categories = "To all categories"
+view_by = "View by"
+other = "Other"
+minute = "min"
+prev_page = "To newer posts"
+next_page = "To older posts"
+# Customize your post date format. See: https://tera.netlify.app/docs/#date
+date_format = "%B %e, %Y"
+
+[extra]
+# Color theme mode. Options: light, dark, auto (automatically switch depending on OS/user agent settings)
+color_mode = "auto"
+
+# List of Papaya navigational menu items. Used to construct the navigation bar. See the README for item schema.
+menu_items = [
+    { name = "projects", url = "$LANG_BASE_URL/projects", show_recent = true, recent_items = 3, recent_trans_key = "recent_projects", more_trans_key = "more_projects" },
+    { name = "blog", url = "$LANG_BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
+    # tag is not a zola section, it's just a link.
+    { name = "tags", url = "$LANG_BASE_URL/tags" },
+    { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
+]
+
+[extra.images]
+# Width defined in pixels
+max_width = 2500
+
+# Open Graph Protocol objects. See: https://ogp.me/
+[extra.ogp]
+locale = "en_US"
+first_name = "Shaurya"
+last_name = "Singh"
+gender = "male"
+username = "shaunsingh"
+
+# Footer social links; full options listed in macros/social.html
+[extra.social]
+email = "shaunsingh0207@gmail.com"
+github = "shaunsingh"
+
+[extra.cdn]
+font_awesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
