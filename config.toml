@@ -19,8 +19,6 @@ highlight_themes_css = [
   { theme = "material-light", filename = "syntax-theme-light.css" },
 ]
 
-[languages]
-
 [languages.en]
 title = "Portfolio"
 description = "Personal portfolio of prior engineering projects, see github.com/shaunsingh for more."
